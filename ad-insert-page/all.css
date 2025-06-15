@@ -1,0 +1,172 @@
+ol {
+    list-style: dot;
+}
+ul {
+    list-style-type: disc;
+}
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+
+/*separate=each border have*/
+table {
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+/*PS,  <link>rel="stylesheet" href=" "  寫在html內,  @import url(" " )   寫在css內*/
+
+/*https://yeun.github.io/open-color/*/
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css");
+/*adobe楷體中文  ,code: font-family: "cwTeKai", serif; */
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+/*adobe明細體中文,  code: font-family:"cwTeMing", serif*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/*瘦長標題字*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*瘦長中體內文字字*/
+@import url("https://fonts.googleapis.com/css?family=Noto+sans+TC:100,200,400,500,600,700,800,900&display=swap" );
+/*思源正黑體英文,   code: font-family: "Noto sans TC", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family='Rotobo', sans-serif");
+/*adobel中細體英文,端正方字 'Rotobo', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*Inter 比 Roboto 字型更正規*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfaed;
+}
+:root{
+     --main-color:#ac482f;
+     --grey-color:#d6d6d6;
+     --tint-color:#d5fa8c;
+     --shades-color:#000;
+     --accent-color:#acc8e5;
+}
+.container{
+    margin:auto;
+    max-width:1200px;
+    height:auto;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'muli',sans-serif;
+}
+.container .insert{
+    display:flex;
+    margin:10px auto  0;
+    width:1000px;
+    height:auto;
+    text-align: left;
+}
+.insert .pic{
+    width:30%;
+    background-color: #fcfaed;
+    height:250px;
+}
+.pic img{
+    width:100%;
+    height:249px;
+    background-position: center;
+    background-size:contain;
+    margin:0;
+    vertical-align: middle;
+}
+.insert-text{
+    width:70%;
+    height:auto;
+    margin:0;
+    background-color: var(--main-color);
+}
+.insert-text h2{
+    font-size: 25px;
+    color:var(--tint-color);
+    padding:10px 35px 20px;
+}
+.insert-text p{
+    font-size: 18px;
+    color:var(--tint-color);
+    padding:10px 35px 30px;
+}
+.insert-text span{
+    font-size: 14px;
+    color:var(--tint-color);
+    padding:10px 35px;
+    display:block;
+}
+.topic{
+    width:1000px;
+    padding:30px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin:auto;
+}
+.items{
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+    width:1000px;
+    height:auto;
+}
+.items .item1{
+    width:32%;
+    height:auto;
+}
+.price{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.price span{
+    color:#00000080;
+    font-size: 14px;
+    font-weight: 600;
+}
+.price a{
+   cursor: pointer;
+   text-decoration: none;
+   background-color: var(--main-color);
+   padding:5px 10px;
+   font-size: 12px;
+   color:var(--tint-color);
+   border-radius: 3px;
+}
+.items h3{
+    font-size: 24px;
+}
+.items p{
+    padding:20px 30px  30px 40px;
+    display:block;
+    text-align: left;
+}
+.items .item1 img{
+    width:250px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.items .item2{
+    width:32%;
+    height:auto;
+}
+.items .item2 img{
+    width:250px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.items .item3{
+    width:32%;
+    height:auto;
+}
+.items .item3 img{
+    width:250px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,197 @@
+ol {
+    list-style: dot;
+}
+ul {
+    list-style-type: disc;
+}
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+
+/*separate=each border have*/
+table {
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+/*PS,  <link>rel="stylesheet" href=" "  寫在html內,  @import url(" " )   寫在css內*/
+
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css");
+/*adobe楷體中文  ,code: font-family: "cwTeKai", serif; */
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+/*adobe明細體中文,  code: font-family:"cwTeMing", serif*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/*中粗度,瘦長標題字*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*瘦長中體字*/
+@import url("https://fonts.googleapis.com/css?family=Noto+sans+TC:100,200,400,500,600,700,800,900&display=swap" );
+/*思源正黑體英文,   code: font-family: "Noto sans TC", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family='Rotobo', sans-serif");
+/*adobel中細體英文,端正 'Rotobo', sans-serif */
+
+img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+*{
+   box-sizing:border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family:'Helvetica', sans-serif;
+}
+.container{
+    margin:auto;
+    height:100vh;
+    width:1200px;
+    background-color: #f5f5f4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .ad-block{
+    width:750px;
+    height:auto;
+    border:2.5px solid #00000080;
+    position:relative;
+    margin:0;
+}
+.ad-block .sale{
+    position:absolute;
+    left:-20px;
+    top:-25px;
+    background-color: #ff0000;
+    color:#fff;
+    padding:5px;
+    font-size: 14px;
+    width:50px;
+    height:25px;
+}
+.ad-block .title{
+    display:block;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e7e6e6;
+    width:100%;
+    padding:7px 0;
+}
+.item{
+    display:flex;
+    width:100%;
+}
+.item .item1{
+    width:33.3%;
+}
+.item1 img{
+    width:100%;
+    vertical-align:middle;
+    background-position: center center;
+    background-size: cover;
+    transform: translateY(1px);
+}
+.item .item2{
+    width:33.3%;
+}
+.item2 span a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#000;
+}
+.item2 .topic{
+    display:flex;
+    justify-content: center;
+}
+.topic .p1{
+    font-size: 17px;
+    font-weight: 600;
+    margin:15px;
+}
+.topic .p2{
+    font-size:13px;
+    margin:20px 0;
+    color:#555555
+}
+.item2 .p3{
+    padding:0 10px;
+    text-align: left;
+}
+.item2 span a:hover{
+    color:#0209d7;
+}
+.item2 .colors{
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+    margin:20px 10px;
+    cursor: pointer;
+}
+.colors div:active{
+    transform: scale(0.9);
+}
+.item2 .colors .col-1{
+     background-color:blueviolet ;
+     width:15px;
+     height:15px;
+}
+.item2 .colors .col-2{
+     background-color:orangered ;
+     width:15px;
+     height:15px;
+}
+.item2 .colors .col-3{
+     background-color:green;
+     width:15px;
+     height:15px;
+}
+.item2 .colors .col-4{
+     background-color:goldenrod ;
+     width:15px;
+     height:15px;
+}
+.item2 .colors .col-5{
+     background-color:palevioletred ;
+     width:15px;
+     height:15px;
+}
+.item2 .colors .col-6{
+     background-color:steelblue ;
+     width:15px;
+     height:15px;
+}
+.item .item3{
+    width:33.3%;
+}
+.item .item3 h2{
+    font-size: 20px;
+}
+.item .item3 li{
+    margin:15px 10px;
+}
+.ad-to-cart{
+    width:748px;
+    height:auto;
+    text-align: center;
+    align-items: center;
+    background-color: #000;
+} 
+.ad-to-cart a{
+    color: #fff; 
+    font-size:18px;
+    padding:5px 15px;
+    display:block;
+    padding-top:10px;
+} 
+.ad-to-cart a:hover{
+    color:#0209d7;
+}  
