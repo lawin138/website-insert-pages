@@ -43,7 +43,11 @@ a{
 *{
    box-sizing:border-box;
 }
-
+:root{
+    --main-color:#000;
+    --shade-color:#d1d1d1;
+    --tint-color:#fff;
+}
 body {
     height: 100vh;
     margin: 0;
@@ -82,7 +86,7 @@ body {
     display:block;
     font-size: 18px;
     font-weight: 600;
-    background-color: #e7e6e6;
+    background-color:var(--shade-color);
     width:100%;
     padding:7px 0;
 }
@@ -180,17 +184,23 @@ body {
 }
 .ad-to-cart{
     width:748px;
-    height:auto;
-    text-align: center;
+    height:40px;
+    display:flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #000;
 } 
 .ad-to-cart a{
-    color: #fff; 
-    font-size:18px;
-    padding:5px 15px;
+    color: #000; 
+    font-size:16px;
+    font-weight: 600;
+    padding:3px 15px;
     display:block;
-    padding-top:10px;
+    letter-spacing: 4px;
+    background-color:#d1d1d1;
+    display:inline-block;
+    border-radius: 5px;
 } 
 .ad-to-cart a:hover{
     color:#0209d7;
