@@ -55,6 +55,7 @@ body {
     background-color: #fff;
     text-align: center;
     font-family: 'muli',sans-serif;
+    border-bottom: 7px  solid var(--main-color);
 }
 .container .insert{
     display:flex;
@@ -110,6 +111,7 @@ body {
     display:flex;
     justify-content: space-around;
     margin:auto;
+    padding-bottom: 30px;
     width:1000px;
     height:auto;
 }
