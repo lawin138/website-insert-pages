@@ -1,0 +1,183 @@
+ol {
+    list-style: dot;
+}
+ul {
+    list-style-type: disc;
+}
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+
+/*separate=each border have*/
+table {
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+/*PS,  <link>rel="stylesheet" href=" "  寫在html內,  @import url(" " )   寫在css內*/
+
+/*https://yeun.github.io/open-color/*/
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css");
+/*adobe楷體中文  ,code: font-family: "cwTeKai", serif; */
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+/*adobe明細體中文,  code: font-family:"cwTeMing", serif*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/*瘦長標題字*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*瘦長中體內文字字*/
+@import url("https://fonts.googleapis.com/css?family=Noto+sans+TC:100,200,400,500,600,700,800,900&display=swap" );
+/*思源正黑體英文,   code: font-family: "Noto sans TC", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family='Rotobo', sans-serif");
+/*adobel中細體英文,端正方字 'Rotobo', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*Inter 比 Roboto 字型更正規*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+:root{
+     --main-color:#eba80a;
+     --grey-color:#808080;
+     --tint-color:#edede9;
+     --box-shades-color:1px 0.5px 3px 0 #808080, 2px 2px 9px 0 #adadadd6;
+     --accent-color:#0156e8;
+}
+* img{
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: var(--box-shades-color);
+}
+.container{
+    max-width:1400px;
+    height:100vh;
+    background-color: #edede9;
+    margin:auto;
+    text-align: center;
+}
+.container .top-title{
+    background-color: var(--main-color);
+    color:#000;
+    font-size: 30px;
+    padding:10px 0;
+
+}
+.container .text-bar{
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 0;
+    
+}
+.text-bar p{
+    font-size: 24px;
+    font-weight: 600;
+    display:inline-block;
+    padding:0 20px;
+}
+.text-bar span{
+    width:35px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display:inline-block;
+    line-height: 35px;
+}
+.text-bar a:active{
+    background-color: #dcca9f;
+}
+.text-bar a{
+    padding:5px 20px;
+    display:inline-block;
+    background-color: var(--main-color);
+    font-size: 18px;
+    text-decoration: none;
+    color:#000;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.content{
+    display:grid;
+    box-sizing: border-box;
+    margin:auto;
+    width:1200px;
+    height:auto;
+    grid-template-columns: 
+       250px repeat(2, 1.5rem) 250px repeat(2,1.5rem) 300px 1.5rem 250px;
+    grid-template-rows:
+       200px 1.5rem 1.5rem 1.5rem 200px;
+}
+.content .pic1{
+    display:grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: linear-gradient(90deg, #500c01, #e83f01);
+    color:#fff;
+}
+.content .pic1 h1{
+    font-size: 22px;
+    text-align: left;
+    padding:0 10px;
+}
+.content .pic1 p{
+    font-size: 1rem;
+    text-align: left;
+    padding:0 10px;
+}
+.content .pic2{
+    display:grid;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.content .pic3{
+    display:grid;
+    grid-column: 7/8;
+    grid-row: 1/4;
+}
+.content .pic4{
+    display:grid;
+    grid-column: 9/10;
+    grid-row: 1/2;
+}
+.content .pic5{
+    display:grid;
+    grid-column:1/2;
+    grid-row: 3/6;
+}
+
+.content .pic6{
+    display:grid;
+    grid-column:3/5;
+    grid-row: 4/6;
+}
+.content .pic7{
+    display:grid;
+    grid-column:6/8;
+    grid-row: 5/6;
+}
+.content .pic7 img{
+    background-size: contain;
+    height: 200px;
+} 
+.content .pic8{
+    display: grid;
+    grid-column: 9/10;
+    grid-row: 3/6;
+    background-image: linear-gradient(0deg, #160150, #0156e8) ;
+    color:#fff;
+}
+.content .pic8 h1{
+    font-size: 22px;
+    text-align: center;
+    padding:100px 10px ;
+}
+
+
+
+
