@@ -1,0 +1,177 @@
+ol {
+    list-style: dot;
+}
+ul {
+    list-style-type: disc;
+}
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+
+/*separate=each border have*/
+table {
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+/*PS,  <link>rel="stylesheet" href=" "  寫在html內,  @import url(" " )   寫在css內*/
+
+/*https://yeun.github.io/open-color/*/
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css");
+/*adobe楷體中文  ,code: font-family: "cwTeKai", serif; */
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+/*adobe明細體中文,  code: font-family:"cwTeMing", serif*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/*瘦長標題字*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*瘦長中體內文字字*/
+@import url("https://fonts.googleapis.com/css?family=Noto+sans+TC:100,200,400,500,600,700,800,900&display=swap" );
+/*思源正黑體英文,   code: font-family: "Noto sans TC", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family='Rotobo', sans-serif");
+/*adobel中細體英文,端正方字 'Rotobo', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*Inter 比 Roboto 字型更正規*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+     --main-color:#000;
+     --grey-color:#808080;
+     --tint-color:#fff;
+     --shades-color:#f5e2e5;
+     --accent-color:#00ff55;
+     font-size: 16px;
+}
+
+.section{
+    width:700px;
+    height:auto;
+    padding:20px 0;
+    box-sizing: border-box;
+    background-color:var(--shades-color);
+    display:flex;
+    justify-content: space-around;
+    font-family: 'Rotobo',sans-serif;
+}
+.table1{
+    background-color: var(--tint-color);
+    border:2px solid #808080;
+    padding: 20px 0;
+    margin-left: 15px;
+    width:200px;
+    height:auto;
+    text-align: center;
+    position:relative;
+}
+.table1 h2{
+    font-size:14px;
+    margin:10px 0;
+    font-weight: 500;
+}
+.table1 h1{
+    font-size: 30px;
+    font-weight: bold ;
+}
+.table2{
+    background-color: var(--tint-color);
+    border:2px solid #808080;
+    padding:20px 0;
+    width:200px;
+    height:auto;
+    text-align: center;
+    position:relative;
+}
+.table2 h2{
+    font-size:14px;
+    margin:10px 0;
+    font-weight: 500;
+}
+.table2 h1{
+    font-size: 30px;
+    font-weight: bold ;
+}
+.table3{
+    background-color: var(--main-color);
+    padding:20px 0;
+    margin-right: 15px;
+    color:#fff;
+    border:2px solid #808080;
+    width:200px;
+    height:auto;
+    text-align: center;
+    position:relative;
+}
+.table3 h2{
+    font-size:14px;
+    margin:10px 0;
+    font-weight: 500;
+}
+.table3 h1{
+    font-size: 30px;
+    font-weight: bold ;
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding-inline-start:0;
+    margin-bottom: 40px;
+}
+ul li{
+    list-style-type: none;
+    margin:0;
+    padding:5px 10px 5px 10px;
+    font-size:14px;
+    display:block;
+}
+ul li span{
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 8px;
+    display:inline-block;
+    text-align: center;
+    line-height: 16px;
+}
+.btn{
+    padding:0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:200px;
+
+}
+.btn a{
+    background-color: var(--main-color);
+    color:var(--tint-color);
+    padding:5px 0;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+    font-size: 16px;
+}
+.btn a:focus{
+    background-color: #3c3c3c;
+}
+.table3 .btn a:focus{
+    background-color: #c2c2c2;
+}
+.table3 .btn a{
+    background-color:#fff;
+    color:#000;
+    padding:5px 0;
+    text-align: center;
+    display:block;
+    font-size: 16px;
+}
